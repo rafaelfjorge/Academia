@@ -1,0 +1,161 @@
+*
+{
+    font-family: Arial;
+}
+
+body
+{
+    background-color: #8d02ae;
+    text-align: center;
+}
+
+nav a 
+{
+    color: #ffffff;
+    text-decoration: none; /*Isso serve para deixar efeito de sublinhado no texto */
+    font-weight: bold;     /*Isso serve para deixar efeito de sublinhado no texto */
+    text-transform: uppercase;  /*Deixa tudo maiusculo */
+    font-size: 14px;   /*Isso serve para deixar efeito de sublinhado no texto */
+}
+
+nav a:hover
+{
+    text-decoration: underline; /*Isso serve para deixar efeito de sublinhado no texto */
+}
+
+h1
+{ /* H1 de todas as paginas*/
+    color: #8bbf18;;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 20px;
+    width: 400px; /*Isso define largura*/
+    border-left: 10px solid #8dbf18; /*Isso define borda esquerda*/
+    border-right: 10px solid #8dbf18; /*Isso define borda Direira*/
+    border-top: 2px solid #8dbf18; /*Isso define borda Topo*/
+    border-bottom: 2px solid #8dbf18; /*Isso define borda de baixo*/
+    border-radius: 30px; /*Isso faz ele arredondado*/
+}
+/*O Div não alinha com o text-align se ela esta no Body, pq ele já alinha normal, ai usa-se o comendo abaixo pára alinhar o h1 e Div*/
+h1, 
+div#infoMessage,
+fieldset,
+table /*Posso chamar ele aqui para não ter q copiar as mnargens na div#infoMessage*/
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#infoMessage 
+/*Formata somente a ID q eu passe na Div, se não usar precisa passar a Id assim*/
+{
+    background-color: #ffcc00;
+    width: 400px;
+    border-radius: 5px; /*Arredonda os cantos*/
+    padding: 10px; /*Espaçamento entre o texto e a borda do elemento*/
+    color: #d40000;
+}
+
+fieldset
+{
+    background-color: #ffffff;
+    width: 400px;
+    text-align: left;
+    border-radius: 5px;
+    border: 0px;
+}
+legend
+{
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding-top: 5px; /*Afasta a legenda do fieldSet*/
+    padding-right: 7px;
+    font-weight: bolder;
+}
+
+legend,
+label
+{
+    color: #8d02ae;
+}
+
+/**Todos os campos podem receber formatação*/
+input,
+select
+{
+    border: 1px solid #8d02ae;
+    margin-bottom: 7px;
+}
+
+/*Fazendo assim "input[type=text]#nome" (input[type=text]#id do campo) eu separo por tipo a formatação do Css para os campos que recebem valor*/
+/*input#rua ou input[type=email] Também pode ser feito assim*/
+input[type=text]#nome,
+input[type=text]#rua,
+input[type=email]
+{
+    width: 95%;
+}
+
+input[type=tel]#telefoneCelularDDD,
+input[type=tel]#telefoneFixoDDD,
+input[type=tel]#telefoneDDD
+{
+    width: 10%;
+}
+
+input[type=tel]#telefoneCelularNumero,
+input[type=tel]#telefoneFixoNumero,
+input[type=tel]#telefoneNumero
+{
+    width: 30%;
+}
+
+input[type=button],
+input[type=submit]
+{
+    background-color: #8bbf18;
+    border-bottom: 3px solid #5b7b1b;
+    border-top: 1px solid #5b7b1b;
+    border-left: 1px solid #5b7b1b;
+    border-right: 1px solid #5b7b1b;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 5px 8 px; /*Lateral e abaixo*/
+}
+
+input[type=button]:hover,
+input[type=submit]:hover
+{
+    /*Efeito que troca a cor quando passa o mouse*/
+    background-color: #a0de1c;
+    border-bottom: 3px solid #5b7b1b; /*Quando passa o mouse ele muda a cor para a cor informada aqui*/
+}
+
+table
+{
+    background-color: #ffffff;
+    font-size: 14px;
+    border-spacing: 1px;
+    border-collapse: separate;
+}
+
+th
+{
+    background-color: #5b7b1d;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+/*Isso faz que o Th do Tr recebe cores diferentes*/
+tr:nth-child(even)
+{
+    background-color: #f3e6f7;
+}
+tr:nth-child(odd)
+{
+    background-color: #ffffff;
+}

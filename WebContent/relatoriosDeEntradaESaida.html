@@ -1,0 +1,89 @@
+<!--Cabeçalho - Inicio -->
+<!DOCTYPE html>
+
+<html lang='pt-br'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Loucademia Home</title>   
+        <link rel="stylesheet" type="text/css" href="css/Loucademia_Estilo.css">
+    </head>
+    <body>
+        <header>
+            <img src="C:\SRC - GIT - VS\academy\Academia\WebContent\images\Loucademia_Logotipo.png">
+            <nav>
+                <div>
+                    <a href="C:\SRC - GIT - VS\academy\Academia\WebContent\novoAluno.html"> Novo Aluno</a><br>
+                    <a href="C:\SRC - GIT - VS\academy\Academia\WebContent\pesquisaDeAluno.html"> Pesquisa de aluno</a><br>
+                    <a href="C:\SRC - GIT - VS\academy\Academia\WebContent\controleDeAcesso.html"> Controle de acesso</a><br>
+                    <a href="C:\SRC - GIT - VS\academy\Academia\WebContent\relatoriosDeEntradaESaida.html"> Relatórios de Entradas e Saídas</a><br>
+                    <a href="C:\SRC - GIT - VS\academy\Academia\WebContent\relatoriosDeSituacoes.html"> Relatórios de Situações</a><br>                </div>
+            </nav>
+        </header>
+        <!--Cabeçalho fim-->
+
+        <h1>Relatório entradas e saídas</h1>
+        
+        <div id ="infoMessage">
+            (Aqui vai uma eventual mensagem de sistema confirmando sucesso ou erro)
+        </div>
+        <br>
+
+        <form>
+            <fieldset>
+                <legend>Relatório entradas e saídas</legend>
+
+                <label for="id">ID:</label><br>
+                <input type="text" name="id" id="id"><br>
+
+                <label for="dataInicial"> Data Inicial:</label><br>
+                <input type="date" name="dataInicial" id="dataInicial"><br>
+
+                <label for="dataFinal"> Data Final:</label><br>
+                <input type="date" name="dataFinal" id="dataFinal"><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Gerar relatório">
+        </form>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Entrada</th>
+                <th>Saída</th>
+                <th>Duração</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Rafael</td>
+                <td>01/01/2022 14:15:00</td>
+                <td>01/01/2022 16:15:00</td>
+                <td>02:00:00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pedrão</td>
+                <td>01/01/2022 12:15:00</td>
+                <td>01/01/2022 16:15:00</td>
+                <td>04:00:00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Maromba</td>
+                <td>01/01/2022 15:15:00</td>
+                <td>01/01/2022 16:15:00</td>
+                <td>01:00:00</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Rafael</td>
+                <td>01/01/2022 16:15:00</td>
+                <td>01/01/2022 18:15:00</td>
+                <td>02:00:00</td>
+            </tr>
+        </table>
+    <!--Rodape - Início-->
+
+    </body>
+</html>
+<!-- Rodapé - Fim-->

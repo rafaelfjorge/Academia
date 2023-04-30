@@ -1,0 +1,100 @@
+<!--Cabeçalho - Inicio -->
+<!DOCTYPE html>
+
+<html lang='pt-br'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Loucademia Home</title>    
+        <link rel="stylesheet" type="text/css" href="css/Loucademia_Estilo.css">
+    </head>
+    <body>
+        <header>
+            <img src="C:\SRC - GIT - VS\academy\Academia\WebContent\images\Loucademia_Logotipo.png">
+            <nav>
+                <div>
+                    <a href="C:\SRC - GIT - VS\academy\Academia\WebContent\novoAluno.html"> Novo Aluno</a><br>
+                    <a href="C:\SRC - GIT - VS\academy\Academia\WebContent\pesquisaDeAluno.html"> Pesquisa de aluno</a><br>
+                    <a href="C:\SRC - GIT - VS\academy\Academia\WebContent\controleDeAcesso.html"> Controle de acesso</a><br>
+                    <a href="C:\SRC - GIT - VS\academy\Academia\WebContent\relatoriosDeEntradaESaida.html"> Relatórios de Entradas e Saídas</a><br>
+                    <a href="C:\SRC - GIT - VS\academy\Academia\WebContent\relatoriosDeSituacoes.html"> Relatórios de Situações</a><br>               </div>
+            </nav>
+        </header>
+        <!--Cabeçalho fim-->
+
+        <h1>Relatório de situações</h1>
+        
+        <div id ="infoMessage">
+            (Aqui vai uma eventual mensagem de sistema confirmando sucesso ou erro)
+        </div>
+        <br>
+
+        <form>
+            <fieldset>
+                <legend>Parâmetros de situações</legend>              
+                   
+                    <label for ="situacao">Situação</label><br>
+                    <select name="situacao" id="situacao">
+                        <option>Ativo</option>
+                        <option>Inativo</option>
+                        <option>Com Pendência</option>
+                    </select><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Gerar relatório">
+        </form>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Situação</th>
+                <th>Celular</th>
+                <th>Fixo</th>
+                <th>Ações</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Rafael</td>
+                <td>Ativo</td>
+                <td>(48) 99800-7313</td>
+                <td>(48) 99800-7313</td>
+                <td>
+                    <input type="button" value="Editar">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rafael</td>
+                <td>Ativo</td>
+                <td>(48) 99800-7313</td>
+                <td>(48) 99800-7313</td>
+                <td>
+                    <input type="button" value="Editar">
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rafael</td>
+                <td>Ativo</td>
+                <td>(48) 99800-7313</td>
+                <td>(48) 99800-7313</td>
+                <td>
+                    <input type="button" value="Editar">
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Rafael</td>
+                <td>Ativo</td>
+                <td>(48) 99800-7313</td>
+                <td>(48) 99800-7313</td>
+                <td>
+                    <input type="button" value="Editar">
+                </td>
+            </tr>
+        </table>
+    <!--Rodape - Início-->
+
+    </body>
+</html>
+<!-- Rodapé - Fim-->
